@@ -1,1 +1,1 @@
-fully complieted web-page with form
+3 displays
