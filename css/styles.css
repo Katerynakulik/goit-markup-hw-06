@@ -400,7 +400,7 @@ button {
       url("../images/background/bg-mob-1-min.jpg")     
     ;
   background-repeat: no-repeat;
-  background-position: auto;
+  background-position: center;
   background-size: cover;
   max-width: 1440px;
   width: 100%;
@@ -507,8 +507,7 @@ button {
 /*strengths*/
 
 .strengths {
-  margin-top: 96px;
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
 .strengths-list {
   display: flex;
@@ -548,7 +547,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .strengths {
-    margin-bottom: 120px;
+    padding: 120px 0;
   }
   .strengths-img {
     display: flex;
@@ -671,7 +670,7 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 48px;
+  gap: 48px;
   flex-basis: 100%;
 }
 
@@ -776,9 +775,10 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-align: center;
   align-items: baseline;
   gap: 72px;
+  padding: 0 auto 0 108px;
 }
 .webstudio {
 }
@@ -798,6 +798,7 @@ button {
   width: 100%;
   height: 72px;
   font-weight: 400;
+  text-align: left;
 }
 
 .down-logo {
@@ -811,7 +812,7 @@ button {
 }
 
 .sm-text {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -828,6 +829,8 @@ button {
 .subscription {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 .to-subscribe {
   font-weight: 500;
@@ -867,7 +870,9 @@ button {
   text-align: center;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   border: none;
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-subscribe {
@@ -883,6 +888,10 @@ button {
   .webstudio {
     max-width: 264px;
   }
+  .footer-wrapper {
+    text-align: left;
+  }
+  
 }
 @media screen and (min-width: 1158px) {
   .footer {
@@ -1073,6 +1082,7 @@ button {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
   fill: transparent;
+  flex-shrink: 0;
 }
 
 .checkbox-icon {
@@ -1108,6 +1118,7 @@ button {
 .input-check {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
