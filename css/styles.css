@@ -900,7 +900,7 @@ button {
   .subscribe-form {
     display: flex;
     justify-content: flex-start;
-    
+    gap: 72px 24px;
   }
   .footer-email{
     margin-bottom: 0;
